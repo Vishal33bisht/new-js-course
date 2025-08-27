@@ -1,0 +1,11 @@
+const myarr=[0,3,2,1,5]
+//onsole.log(myarr[1])
+myarr.unshift(9)
+//console.log(myarr)
+myarr.shift()
+//console.log(myarr)
+const myn1=myarr.slice(1,3)
+console.log(myn1)
+const myn2=myarr.splice(1,3)
+console.log(myarr)
+console.log(myn2)
