@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing game</title>
+ <style>
+        body{
+            background-color:#111;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .game-container{
+            background-color:#333;
+            padding:30px;
+            border-radius:10px;
+            text-align:center;
+            width:400px;
+        }
+        h1{
+            color:white;
+        }
+        p{
+           font-size:14px;
+           color:#ddd;
+        }
+        input[type="number"]{
+            padding:10px;
+            border-radius:5px;
+            font-size:15px;
+            text-align:center;
+            width:150px;
+            color:black;
+        }
+        button{
+            padding:20px;
+            border-radius:10px;
+            background-color:black;
+            color:white;
+            font-size:20px;
+            margin:5px;
+            width:150px;
+            cursor:pointer;
+        }
+        .results{
+            text-align:left;
+            color:white;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Number Guessing Game</h1>
+        <p>try and guess a random number between 1 and 100.</p>
+        <p>you have 10 attempts to guess the right number.</p>
+
+        <h2>guess a number</h2>
+    <input type="number" id="guess" placeholder="Enter number">
+    <br>
+    <button id="submit">Submit</button>
+<div class="results">
+    <p id="prevguess">previous guess: </p>
+    <p id="remaining"> guess remaining: </p>
+    <p class="loworhi"></p>
+</div>
+    </div>
+<script src="guess.js"></script>
+</body>
+</html>
